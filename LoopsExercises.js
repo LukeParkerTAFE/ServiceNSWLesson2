@@ -56,20 +56,20 @@ async function Program() {
 
     // 4
     let myArray = ["Apple", "Banana", "Orange", "Andrew", "Bob", "Steve"];
-    // for (let i = 0; i < myArray.length; i++) {
-    //     let currentElement = myArray[i];
-    //     if(currentElement[0] == "A"){
-    //         console.log(currentElement);
-    //     }
-    // }
-    let i = 0;
-    while (i < myArray.length) {
+    for (let i = 0; i < myArray.length; i++) {
         let currentElement = myArray[i];
         if(currentElement[0] == "A"){
             console.log(currentElement);
         }
-        i++;
     }
+    // let i = 0;
+    // while (i < myArray.length) {
+    //     let currentElement = myArray[i];
+    //     if(currentElement[0] == "A"){
+    //         console.log(currentElement);
+    //     }
+    //     i++;
+    // }
 }
 
 Program().then(() => {
