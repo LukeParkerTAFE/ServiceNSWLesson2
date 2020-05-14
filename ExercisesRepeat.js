@@ -144,7 +144,7 @@ async function Program() {
 
         let found = false;
         for (let j = 0; j < myCountedArray.length; j++) {
-            let element = myCountedArray[j].name;
+            let element = myCountedArray[j];
             if (element.name == name){
                 found = true;
                 element.count++;
@@ -158,8 +158,10 @@ async function Program() {
             });
         }
     }
-
-    console.log(myCountedArray);
+    for (let i = 0; i < myCountedArray.length; i++) {
+        let element = myCountedArray[i];
+        console.log(`${element.name} appears ${element.count} times`)
+    }
 
     // let myCountedArray = [
     //     {
